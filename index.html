@@ -9,13 +9,23 @@
 <body>
     <div id="flexHead">
     <h1 id="header">Recipes</h1>
-    <div id="saveRec" class="Saves">Save Recipe</div>
+    <div id="saved" class="saved" data-totalitems="0">
+    <i class="fas fa-shopping-cart"> 
+    </i>
     </div>
+    <div class ="page-wrapper">
+        <button id="saveRec">
+            Save Recipe
+            <span class="recentSaves"></span>
+        </button>
+    </div>
+    </div>
+    
 
     <div id="recipeList">
     <div class="recipes" id="rec1">
         <h3> Recipe 1</h3>
-        <ul id="ing1">
+        <ul id="ing1" class="saved">
             <li>Lentils</li>
             <li>Chorizo</li>
             <li>Garlic Paste</li>

@@ -59,3 +59,27 @@ const childrenIng4 = parentIngList4.children;
 // console.log(childrenIng);
 
 console.log(childrenIng4[0])
+
+//----------------------------------------------------------
+
+document.getElementById('saveRec').addEventListener('click', function() {
+    const button = this;
+    const savedRec = document.getElementById('saved');
+    const recipeTotals = parseInt(savedRec.getAttribute('data-totalitems')) + 1; // Increment total items
+
+    // Add 'recentSaves' class to the button
+    button.querySelector('span').classList.add('recentSaves');
+
+    // Remove 'recentSaves' class after 1 second and update data attribute
+    setTimeout(() => {
+        button.querySelector('span').classList.remove('recentSaves');
+        savedRec.setAttribute('data-totalitems', recipeTotals);
+    }, 1000);
+
+    // Add 'shake' class to cart icon and remove it after 0.5 seconds
+    const cartIcon = savedRec.querySelector('i'); // Assuming you want to shake the cart icon
+    if (cartIcon) {
+        cartIcon.classList.add('shake');
+        setTimeout(() => cartIcon.classList.remove('shake'), 500);
+    }
+});
