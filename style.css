@@ -1,3 +1,9 @@
-#header{
+#flexHead{
+    display: flex;
+    justify-content: space-between;
 
+}
+
+#saveRec{
+    border: 5px black solid;
 }

@@ -19,9 +19,9 @@ for (let i = 0; i < childrenIng1.length; i++){
     console.log(childrenIng1[i]);
 }
 
-const chickenBuillon = document.createElement('li')
-chickenBuillon.textContent = "Chicken buillon"
-parentIngList1.appendChild(chickenBuillon);
+const recipeAddition1 = document.createElement('li')
+recipeAddition1.textContent = "Chicken bouillon"
+parentIngList1.appendChild(recipeAddition1);
 
 //---------------------------------------------------------
 
@@ -32,6 +32,15 @@ const childrenIng2 = parentIngList2.children;
 // console.log(childrenIng);
 
 console.log(childrenIng2[0]);
+
+for (let i = 0; i < childrenIng2.length; i++){
+    console.log(childrenIng2[i]);
+}
+
+const recipeAddition2 = document.createElement('li')
+recipeAddition2.textContent = "Chicken bouillon"
+parentIngList2.appendChild(recipeAddition2);
+
 //---------------------------------------------------------
 
 const parentIngList3 = document.getElementById('ing2');
