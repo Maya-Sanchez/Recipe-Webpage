@@ -103,9 +103,11 @@ document.querySelector('.close').addEventListener("click",function(){
 //----------------------------------------------------------
 
 
-document.getElementById("smallerWindow").addEventListener("click", function() {
+
+document.getElementById("smallerWindow").addEventListener("click", function() {   //not sure why this is not working
     window.open("https://www.facebook.com/", "facebookWindow", "width=800,height=600");
 });
+//the goal to to link to a nonexistant facebook page for pictures of the recipe
 
 //----------------------------------------------------------------------
 
