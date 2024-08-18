@@ -6,9 +6,11 @@
 }
 
 .buttonStyle{
+    text-decoration: none;
+    font-size: 30px;
     display: inline;
     width: 70px;
-    height: 20px;
+    height: 60px;
     background: orange;
     border-radius: 5px;
 }
