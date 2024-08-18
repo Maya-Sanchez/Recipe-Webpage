@@ -4,6 +4,8 @@ header1.style.backgroundColor="blue"
 
 let recList = document.querySelector('#recipeList');
 recList.style.backgroundColor="purple";
+recList.style.width="80vw";
+recList.style.margin="0";
 // console.log(recList)
 
 //-----------------------------------------------------------------
@@ -100,3 +102,8 @@ document.querySelector('.close').addEventListener("click",function(){
 
 //----------------------------------------------------------
 
+
+window.getElementById("smallerWindow").addEventListener("click",function(){
+    window.open("https://www.facebook.com/","facebook Recipes")
+
+})

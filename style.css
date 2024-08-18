@@ -55,3 +55,15 @@
     border-radius: 5px;
     cursor: pointer;
 }
+
+#flexHead{
+    display: flex;
+    justify-content:space-between;
+}
+
+.historyStyle{
+    width: 15vw;
+    height: 30vh;
+    border: 5px black solid;
+   
+}
