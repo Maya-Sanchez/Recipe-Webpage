@@ -103,7 +103,22 @@ document.querySelector('.close').addEventListener("click",function(){
 //----------------------------------------------------------
 
 
-window.getElementById("smallerWindow").addEventListener("click",function(){
-    window.open("https://www.facebook.com/","facebook Recipes")
+document.getElementById("smallerWindow").addEventListener("click", function() {
+    window.open("https://www.facebook.com/", "facebookWindow", "width=800,height=600");
+});
 
-})
+//----------------------------------------------------------------------
+
+function validate(){
+    let email=document.getElementById("text").value;
+    let regx= /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+
+    if(regx.text(mail)){
+        alert("valid email")
+        return true
+    }
+    else{
+        alert("Invalid email")
+        return false;
+    }
+}
