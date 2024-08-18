@@ -58,9 +58,9 @@
 
 #flexHead{
     display: flex;
-    justify-content:space-between;
+    justify-content:flex-start;
 }
 
 .signup{
-    
+margin-left: 5vh;
 }
