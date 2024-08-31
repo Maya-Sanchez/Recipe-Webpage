@@ -149,7 +149,7 @@ contactForm.addEventListener('submit', function (event) {
   fetch("index.JSON")   //I have no idea how to sore the data in a JSON file or where to store it to
     .then(response => {
       if (!response.ok) {
-        throw new Error('Network response was not ok');
+        throw new Error('Not a valid response');
       }
       return response.text();
     })
