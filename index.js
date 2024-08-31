@@ -126,7 +126,7 @@ function validate(){
 }
 
 //---------------------------------- Code for 308.A SBA
-fetch('https://www.themealdb.com/api/json/v1/1/categories.php')
+fetch('https://www.themealdb.com/api/json/v1/1/categories.php')  //I don't understand why this data doesn't require an API key
   .then(response => response.json())
   .then(data => console.log(data))
   .catch(error => console.error('Error:', error));
@@ -146,7 +146,7 @@ contactForm.addEventListener('submit', function (event) {
     body: formData,
   };
 
-  fetch("", requestOptions)
+  fetch("index.JSON")   //I have no idea how to sore the data in a JSON file or where to store it to
     .then(response => {
       if (!response.ok) {
         throw new Error('Network response was not ok');
